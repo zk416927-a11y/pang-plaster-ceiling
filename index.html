@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Pang Plaster Ceiling & Renovation | Johor Bahru</title>
+
   <meta name="description"
-        content="Pang Plaster Ceiling & Renovation provides construction, plaster ceiling and renovation services in Johor Bahru, Malaysia.">
+    content="Pang Plaster Ceiling & Renovation provides construction, plaster ceiling and renovation services in Johor Bahru, Malaysia.">
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -30,7 +32,8 @@
       text-decoration: none;
     }
 
-    /* NAVBAR */
+    /* NAVIGATION */
+
     header {
       background: #111;
       position: sticky;
@@ -67,18 +70,20 @@
     nav ul a {
       color: #fff;
       font-size: 15px;
-      transition: 0.3s;
     }
 
     nav ul a:hover {
       color: #f5b400;
     }
 
+
     /* HERO */
+
     .hero {
       min-height: 90vh;
       display: flex;
       align-items: center;
+
       background:
         linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)),
         url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=80")
@@ -120,16 +125,11 @@
       margin-right: 10px;
       border-radius: 5px;
       font-weight: bold;
-      transition: 0.3s;
     }
 
     .btn-primary {
       background: #f5b400;
       color: #111;
-    }
-
-    .btn-primary:hover {
-      background: #fff;
     }
 
     .btn-outline {
@@ -142,7 +142,9 @@
       color: #111;
     }
 
+
     /* GENERAL */
+
     section {
       padding: 80px 20px;
     }
@@ -166,7 +168,9 @@
       color: #666;
     }
 
+
     /* SERVICES */
+
     .services {
       background: #f7f7f7;
     }
@@ -203,7 +207,9 @@
       color: #666;
     }
 
+
     /* ABOUT */
+
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -244,7 +250,9 @@
       font-size: 20px;
     }
 
+
     /* PROJECTS */
+
     .projects {
       background: #111;
       color: #fff;
@@ -256,7 +264,7 @@
 
     .project-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
     }
 
@@ -268,7 +276,7 @@
 
     .project-card img {
       width: 100%;
-      height: 230px;
+      height: 220px;
       object-fit: cover;
       display: block;
       transition: 0.4s;
@@ -279,10 +287,13 @@
     }
 
     .project-card h3 {
-      padding: 18px;
+      padding: 15px;
+      font-size: 17px;
     }
 
+
     /* CONTACT */
+
     .contact {
       background: #f7f7f7;
     }
@@ -327,14 +338,35 @@
 
     .whatsapp {
       background: #25D366;
-      color: #fff;
     }
 
     .contact-link:hover {
       opacity: 0.85;
     }
 
+
+    /* FLOATING WHATSAPP */
+
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 25px;
+      right: 25px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      z-index: 9999;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+
+
     /* FOOTER */
+
     footer {
       background: #111;
       color: #aaa;
@@ -346,7 +378,9 @@
       color: #fff;
     }
 
+
     /* MOBILE */
+
     @media (max-width: 800px) {
 
       nav {
@@ -371,6 +405,10 @@
         grid-template-columns: 1fr;
       }
 
+      .project-card img {
+        height: 250px;
+      }
+
       .about-image {
         order: 2;
       }
@@ -380,14 +418,20 @@
         font-size: 30px;
       }
     }
+
   </style>
 </head>
 
+
 <body>
 
+
   <!-- NAVIGATION -->
+
   <header>
+
     <nav>
+
       <div class="logo">
         PANG <span>PLASTER CEILING</span>
       </div>
@@ -399,109 +443,389 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
     </nav>
+
   </header>
 
 
+
   <!-- HERO -->
+
   <section class="hero" id="home">
+
     <div class="hero-content">
 
-      <small>CONSTRUCTION & RENOVATION • JOHOR BAHRU</small>
+      <small>
+        CONSTRUCTION & RENOVATION • JOHOR BAHRU
+      </small>
 
       <h1>
         Quality Construction & Renovation Services
       </h1>
 
       <p>
-        Pang Plaster Ceiling & Renovation provides professional
-        construction, plaster ceiling and renovation services
-        for homes and businesses in Johor Bahru.
+        Pang Plaster Ceiling & Renovation provides
+        professional construction, plaster ceiling and
+        renovation services for homes and businesses
+        in Johor Bahru.
       </p>
 
       <a href="#contact" class="btn btn-primary">
         Get a Free Quote
       </a>
 
-      <a href="https://wa.me/60177903233"
-         class="btn btn-outline"
-         target="_blank">
+      <a
+        href="https://wa.me/60177903233"
+        class="btn btn-outline"
+        target="_blank">
         WhatsApp Us
       </a>
 
     </div>
+
   </section>
 
 
+
   <!-- SERVICES -->
-<section class="projects" id="projects">
-  <div class="container">
 
-    <div class="section-title">
-      <h2>Our Projects</h2>
-      <p>Our recent plaster ceiling and renovation projects.</p>
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Our Services</h2>
+
+        <p>
+          Construction and renovation solutions for
+          your property.
+        </p>
+
+      </div>
+
+
+      <div class="service-grid">
+
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            🏗️
+          </div>
+
+          <h3>Construction</h3>
+
+          <p>
+            Construction work for residential and
+            commercial properties.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            🏠
+          </div>
+
+          <h3>Plaster Ceiling</h3>
+
+          <p>
+            Modern plaster ceiling solutions designed
+            to improve your interior.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            🔨
+          </div>
+
+          <h3>Renovation</h3>
+
+          <p>
+            Renovation services for homes, shops
+            and offices.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            🎨
+          </div>
+
+          <h3>Interior Work</h3>
+
+          <p>
+            Interior improvement and finishing work
+            for a clean modern look.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            🧱
+          </div>
+
+          <h3>Partition Work</h3>
+
+          <p>
+            Practical partition solutions for homes,
+            offices and commercial spaces.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            📐
+          </div>
+
+          <h3>Custom Projects</h3>
+
+          <p>
+            Discuss your project with us and get a
+            solution based on your requirements.
+          </p>
+
+        </div>
+
+
+      </div>
+
     </div>
 
-    <div class="project-grid">
+  </section>
 
-      <div class="project-card">
-        <img src="ceiling-project-01.jpg" alt="Plaster ceiling project 1">
-        <h3>Plaster Ceiling Project</h3>
-      </div>
 
-      <div class="project-card">
-        <img src="ceiling-project-02.jpg" alt="Plaster ceiling project 2">
-        <h3>Plaster Ceiling Project</h3>
-      </div>
 
-      <div class="project-card">
-        <img src="ceiling-project-03.jpg" alt="Plaster ceiling project 3">
-        <h3>Plaster Ceiling Project</h3>
-      </div>
+  <!-- ABOUT -->
 
-      <div class="project-card">
-        <img src="ceiling-project-04.jpg" alt="Plaster ceiling project 4">
-        <h3>Ceiling Renovation</h3>
-      </div>
+  <section id="about">
 
-      <div class="project-card">
-        <img src="ceiling-project-05.jpg" alt="Plaster ceiling project 5">
-        <h3>Interior Renovation</h3>
-      </div>
+    <div class="container">
 
-      <div class="project-card">
-        <img src="ceiling-project-06.jpg" alt="Plaster ceiling project 6">
-        <h3>Modern Ceiling</h3>
-      </div>
+      <div class="about-grid">
 
-      <div class="project-card">
-        <img src="ceiling-project-07.jpg" alt="Plaster ceiling project 7">
-        <h3>Renovation Work</h3>
-      </div>
 
-      <div class="project-card">
-        <img src="ceiling-project-08.jpg" alt="Plaster ceiling project 8">
-        <h3>Custom Ceiling Design</h3>
+        <div class="about-image">
+
+          <img
+            src="ceiling-project-01.jpg"
+            alt="Pang Plaster Ceiling project">
+
+        </div>
+
+
+        <div class="about-text">
+
+          <h2>
+            About Pang Plaster Ceiling & Renovation
+          </h2>
+
+          <p>
+            We provide construction and renovation
+            services for customers in Johor Bahru
+            and surrounding areas.
+          </p>
+
+          <p>
+            Our goal is to deliver practical,
+            attractive and quality workmanship
+            for every project.
+          </p>
+
+
+          <ul class="check-list">
+
+            <li>Construction Services</li>
+
+            <li>Plaster Ceiling</li>
+
+            <li>Renovation Work</li>
+
+            <li>Residential & Commercial Projects</li>
+
+            <li>Johor Bahru Service Area</li>
+
+          </ul>
+
+        </div>
+
+
       </div>
 
     </div>
-  </div>
-</section>
+
+  </section>
+
+
+
+  <!-- PROJECTS -->
+
+  <section class="projects" id="projects">
+
+    <div class="container">
+
+
+      <div class="section-title">
+
+        <h2>Our Projects</h2>
+
+        <p>
+          Our recent plaster ceiling and renovation projects.
+        </p>
+
+      </div>
+
+
+      <div class="project-grid">
+
+
+        <div class="project-card">
+
+          <img
+            src="ceiling-project-01.jpg"
+            alt="Plaster ceiling project 1">
+
+          <h3>
+            Plaster Ceiling Project
+          </h3>
+
+        </div>
+
+
+        <div class="project-card">
+
+          <img
+            src="ceiling-project-02.jpg"
+            alt="Plaster ceiling project 2">
+
+          <h3>
+            Plaster Ceiling Project
+          </h3>
+
+        </div>
+
+
+        <div class="project-card">
+
+          <img
+            src="ceiling-project-03.jpg"
+            alt="Plaster ceiling project 3">
+
+          <h3>
+            Plaster Ceiling Project
+          </h3>
+
+        </div>
+
+
+        <div class="project-card">
+
+          <img
+            src="ceiling-project-04.jpg"
+            alt="Ceiling renovation project">
+
+          <h3>
+            Ceiling Renovation
+          </h3>
+
+        </div>
+
+
+        <div class="project-card">
+
+          <img
+            src="ceiling-project-05.jpg"
+            alt="Interior renovation project">
+
+          <h3>
+            Interior Renovation
+          </h3>
+
+        </div>
+
+
+        <div class="project-card">
+
+          <img
+            src="ceiling-project-06.jpg"
+            alt="Modern ceiling project">
+
+          <h3>
+            Modern Ceiling
+          </h3>
+
+        </div>
+
+
+        <div class="project-card">
+
+          <img
+            src="ceiling-project-07.jpg"
+            alt="Renovation project">
+
+          <h3>
+            Renovation Work
+          </h3>
+
+        </div>
+
+
+        <div class="project-card">
+
+          <img
+            src="ceiling-project-08.jpg"
+            alt="Custom ceiling design">
+
+          <h3>
+            Custom Ceiling Design
+          </h3>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
 
   <!-- CONTACT -->
+
   <section class="contact" id="contact">
 
     <div class="container">
 
       <div class="contact-grid">
 
+
         <div class="contact-info">
 
-          <h2>Let's Discuss Your Project</h2>
+          <h2>
+            Let's Discuss Your Project
+          </h2>
 
           <p>
-            Planning a construction, plaster ceiling or
-            renovation project?
+            Planning a construction, plaster ceiling
+            or renovation project?
           </p>
 
           <p>
@@ -509,47 +833,83 @@
             for more information and a quotation.
           </p>
 
-          <p><strong>📍 Location:</strong> Johor Bahru, Malaysia</p>
+          <p>
+            <strong>📍 Location:</strong>
+            Johor Bahru, Malaysia
+          </p>
 
-          <p><strong>📞 Phone:</strong> +60 17-790 3233</p>
+          <p>
+            <strong>📞 Phone:</strong>
+            +60 17-790 3233
+          </p>
 
         </div>
 
 
         <div class="contact-box">
 
-          <h3>Contact Us</h3>
+          <h3>
+            Contact Us
+          </h3>
+
 
           <a
             href="https://wa.me/60177903233"
             class="contact-link whatsapp"
             target="_blank">
+
             💬 WhatsApp: +60 17-790 3233
+
           </a>
+
 
           <a
             href="tel:+60177903233"
             class="contact-link">
+
             📞 Call Us
+
           </a>
+
 
         </div>
 
+
       </div>
+
     </div>
+
   </section>
 
 
+
+  <!-- FLOATING WHATSAPP -->
+
+  <a
+    href="https://wa.me/60177903233"
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="WhatsApp">
+
+    💬
+
+  </a>
+
+
+
   <!-- FOOTER -->
+
   <footer>
 
     <p>
-      © 2026 <strong>Pang Plaster Ceiling & Renovation</strong>.
+      © 2026
+      <strong>Pang Plaster Ceiling & Renovation</strong>.
       All Rights Reserved.
     </p>
 
     <p>
-      Construction & Renovation Services • Johor Bahru, Malaysia
+      Construction & Renovation Services •
+      Johor Bahru, Malaysia
     </p>
 
   </footer>
