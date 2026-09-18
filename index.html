@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pang Plaster Ceiling & Renovation | Johor Bahru</title>
+  <meta name="description"
+        content="Pang Plaster Ceiling & Renovation provides construction, plaster ceiling and renovation services in Johor Bahru, Malaysia.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #fff;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* NAVBAR */
+    header {
+      background: #111;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      max-width: 1150px;
+      margin: auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #f5b400;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul a {
+      color: #fff;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    nav ul a:hover {
+      color: #f5b400;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)),
+        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=80")
+        center/cover;
+    }
+
+    .hero-content {
+      max-width: 1150px;
+      width: 100%;
+      margin: auto;
+      padding: 40px 20px;
+      color: #fff;
+    }
+
+    .hero-content small {
+      color: #f5b400;
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .hero-content h1 {
+      font-size: 55px;
+      line-height: 1.1;
+      max-width: 750px;
+      margin: 15px 0;
+    }
+
+    .hero-content p {
+      max-width: 650px;
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #eee;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      margin-right: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #f5b400;
+      color: #111;
+    }
+
+    .btn-primary:hover {
+      background: #fff;
+    }
+
+    .btn-outline {
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .btn-outline:hover {
+      background: #fff;
+      color: #111;
+    }
+
+    /* GENERAL */
+    section {
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    /* SERVICES */
+    .services {
+      background: #f7f7f7;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+    }
+
+    .service-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .service-card p {
+      color: #666;
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .check-list li {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: #f5b400;
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+    /* PROJECTS */
+    .projects {
+      background: #111;
+      color: #fff;
+    }
+
+    .projects .section-title p {
+      color: #bbb;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .project-card {
+      overflow: hidden;
+      border-radius: 8px;
+      background: #222;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+      transition: 0.4s;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-card h3 {
+      padding: 18px;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #f7f7f7;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .contact-info h2 {
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin: 15px 0;
+      color: #555;
+    }
+
+    .contact-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .contact-box h3 {
+      margin-bottom: 20px;
+    }
+
+    .contact-link {
+      display: block;
+      background: #111;
+      color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .contact-link:hover {
+      opacity: 0.85;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 25px 20px;
+    }
+
+    footer strong {
+      color: #fff;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero-content h1 {
+        font-size: 40px;
+      }
+
+      .service-grid,
+      .project-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image {
+        order: 2;
+      }
+
+      .section-title h2,
+      .about-text h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+      <div class="logo">
+        PANG <span>PLASTER CEILING</span>
+      </div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+
+      <small>CONSTRUCTION & RENOVATION • JOHOR BAHRU</small>
+
+      <h1>
+        Quality Construction & Renovation Services
+      </h1>
+
+      <p>
+        Pang Plaster Ceiling & Renovation provides professional
+        construction, plaster ceiling and renovation services
+        for homes and businesses in Johor Bahru.
+      </p>
+
+      <a href="#contact" class="btn btn-primary">
+        Get a Free Quote
+      </a>
+
+      <a href="https://wa.me/60177903233"
+         class="btn btn-outline"
+         target="_blank">
+        WhatsApp Us
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Construction and renovation solutions for your property.</p>
+      </div>
+
+      <div class="service-grid">
+
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3>Construction</h3>
+          <p>
+            Construction work for residential and commercial
+            properties with attention to quality and detail.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏠</div>
+          <h3>Plaster Ceiling</h3>
+          <p>
+            Modern plaster ceiling solutions designed to improve
+            the appearance of your interior.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🔨</div>
+          <h3>Renovation</h3>
+          <p>
+            Renovation services to transform and improve
+            your home, shop or office.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>Interior Work</h3>
+          <p>
+            Interior improvement and finishing work for a
+            clean and modern look.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧱</div>
+          <h3>Partition Work</h3>
+          <p>
+            Practical partition solutions for homes, offices
+            and commercial spaces.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📐</div>
+          <h3>Custom Projects</h3>
+          <p>
+            Discuss your project with us and get a solution
+            based on your requirements.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div class="container">
+
+      <div class="about-grid">
+
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80"
+            alt="Construction work">
+        </div>
+
+        <div class="about-text">
+
+          <h2>About Pang Plaster Ceiling & Renovation</h2>
+
+          <p>
+            We provide construction and renovation services
+            for customers in Johor Bahru and surrounding areas.
+          </p>
+
+          <p>
+            Our goal is to deliver practical, attractive and
+            quality workmanship for every project.
+          </p>
+
+          <ul class="check-list">
+            <li>Construction Services</li>
+            <li>Plaster Ceiling</li>
+            <li>Renovation Work</li>
+            <li>Residential & Commercial Projects</li>
+            <li>Johor Bahru Service Area</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Our Projects</h2>
+        <p>Some examples of construction and renovation work.</p>
+      </div>
+
+      <div class="project-grid">
+
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80"
+            alt="Construction project">
+          <h3>Construction Work</h3>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80"
+            alt="Interior renovation">
+          <h3>Interior Renovation</h3>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
+            alt="Modern interior">
+          <h3>Modern Interior</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+
+          <h2>Let's Discuss Your Project</h2>
+
+          <p>
+            Planning a construction, plaster ceiling or
+            renovation project?
+          </p>
+
+          <p>
+            Contact Pang Plaster Ceiling & Renovation
+            for more information and a quotation.
+          </p>
+
+          <p><strong>📍 Location:</strong> Johor Bahru, Malaysia</p>
+
+          <p><strong>📞 Phone:</strong> +60 17-790 3233</p>
+
+        </div>
+
+
+        <div class="contact-box">
+
+          <h3>Contact Us</h3>
+
+          <a
+            href="https://wa.me/60177903233"
+            class="contact-link whatsapp"
+            target="_blank">
+            💬 WhatsApp: +60 17-790 3233
+          </a>
+
+          <a
+            href="tel:+60177903233"
+            class="contact-link">
+            📞 Call Us
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 <strong>Pang Plaster Ceiling & Renovation</strong>.
+      All Rights Reserved.
+    </p>
+
+    <p>
+      Construction & Renovation Services • Johor Bahru, Malaysia
+    </p>
+
+  </footer>
+
+
+</body>
+</html>
